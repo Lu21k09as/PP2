@@ -71,7 +71,7 @@ Try accessing the `return_value` identifier without prepending `$`.
 **What happens and why?**
 
 <details>
-    <summary>You Answer</summary>
+    <summary>Esa wird nur return value ausgegeben, da das $ zeichen den Wert speichert. Ohne zu sagen, was ausgegeben werden soll wird einfach der Befehl wiederholt. </summary>
     ......
 </details>
 
@@ -97,7 +97,8 @@ and pressing `enter`.
 
 <details>
     <summary>Calling a Function</summary>
-    Include a screenshot of your function-call!
+    <img width="742" height="285" alt="image" src="https://github.com/user-attachments/assets/08b55fac-e010-4265-b864-b78337d9f2df" />
+
 </details>
 
 ### Task 4: Handling Parameters
@@ -260,7 +261,21 @@ These examples demonstrate various fundamental operations in Bash scripting, inc
 
 **Write a function, combining at least 3 different of these primitives to a function**
 <details>
-    <summary>Your Function</summary>
+    
+    <summary>task6_func() {
+    x=7
+    y=4
+    result=$((x * y))
+
+    text="Willkommen"
+    text_length=${#text}
+
+    if (( result >= text_length )); then
+        echo "$result ist größer oder gleich $text_length"
+    else
+        echo "$result ist kleiner als $text_length"
+    fi
+}</summary>
     
 ```bash
 your code
@@ -300,7 +315,11 @@ cat ./function
 
 **What happend?**
 <details>
-    <summary>Your Explaination</summary>
+ 
+<summary> Mit > wird eine Datei überschrieben -> alter Inhalt geht verloren
+Mit >> wird an eine Datei angehängt -> alter Inhalt bleibt erhalten
+Deshalb ersetzt die zweite Funktion im ersten Fall die erste,
+im zweiten Fall stehen beide Funktionen gemeinsam in der Datei </summary>
     .....
 
 </details>
@@ -343,7 +362,8 @@ You can use a shorthand within your calls to add this string as a prefix to any 
 
 **Look at task 6 again. What is the complete filepath of your functions file?**
 <details>
-    <summary>Your Answer</summary>
+   
+    <summary>/home/Lu21k09as/functions</summary>
     ....
 </details>
 
@@ -367,7 +387,8 @@ cd /
 ```
 **Run `ls` again and insert the content here:**
 <details>
-    <summary>Your Answer</summary>
+    <summary>bin   dev  home        initrd.img.old  lib64       media  opt   root  sbin  sys  usr  vmlinuz
+boot  etc  initrd.img  lib             lost+found  mnt    proc  run   srv   tmp  var  vmlinuz.old </summary>
     ....
 </details>
 
@@ -382,7 +403,8 @@ Use `rm` to delete a file and `rm -rf` to delete a directory.
 
 **Add a directory into your `~` dir and create an empty file in it. Delete the directory again.**
 <details>
-    <summary>Your Terminal Output</summary>
+    <summary><img width="911" height="382" alt="image" src="https://github.com/user-attachments/assets/c7aa0afe-35fb-43a5-9d84-7c651f538c0d" />
+</summary>
 ```bash
 your terminal output
 ```
@@ -438,7 +460,7 @@ When you finished that tutorial, open a file in your home directory and manipula
 
 **How do you save a buffer to a new filename from within `vim`?**
 <details>
-    <summary>Your Answer</summary>
+    <summary>In vim speicherst du den aktuellen Inhalt unter einem neuen Dateinamen mit: :w neuer_dateiname </summary>
     .....
 </details>
  
